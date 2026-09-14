@@ -1,0 +1,10 @@
+class Solution {
+  public:
+    int recursiveSum(int n) {
+        // Recursively sum from 1 to n and return
+        // code here
+        if(n==0) return 0;
+        int ans=recursiveSum(n-1)+n;
+        return ans;
+    }
+};
